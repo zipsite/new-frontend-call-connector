@@ -4,7 +4,7 @@
           class="drop-zone"
           @drop="onDrop($event)"
           @dragover.prevent>
-          <template v-for="item in itemsByOrder" :key="item.title">
+          <template v-for="item in itemsByOrder">
               <div 
                   class="drag-el"
                   :draggable="true" 
@@ -82,7 +82,9 @@ export default {
       onDrop(e) {
           let firstItemId = +e.dataTransfer.getData("firstItem");
           let secondItemId = +this.swapWith;
-          
+          console.log(firstItemId);
+          console.log(secondItemId);
+          console.log("--------------")
           if (firstItemId !== secondItemId) {
               for(let i = 0; i < this.items.length; i++) {
                   
