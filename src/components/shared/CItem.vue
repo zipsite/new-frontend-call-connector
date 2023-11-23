@@ -14,8 +14,8 @@
                     {{ item.title }}
                   </div>
                   <CInput></CInput>
-                  <DBUtton></DBUtton>
-                  <!-- <Per></Per> -->
+                  <DBUtton><img src="../../assets/img/close.png"></DBUtton>
+                  <DBUtton><img src="../../assets/img/density.png"></DBUtton>
               </div>
           </template>    
       </div>
@@ -26,14 +26,13 @@
 <script>
 import DBUtton from './DBUtton.vue';
 import CInput from './CInput.vue';
-import Per from './Per.vue';
+
 
 export default {
   components: {
     CInput,
     DBUtton,
-    Per,
-  },
+},
   data() {
       return {
           items: [
@@ -47,7 +46,7 @@ export default {
               },
               {
                   id: 2,
-                  title: 'mega_number',
+                  title: 'sip_number',
               },
           ],
           swapWith: null,

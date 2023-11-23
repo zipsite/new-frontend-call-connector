@@ -5,11 +5,14 @@
     </div>
       
     <CButtonExmple buttonText="Кнопка" ><img src=""></CButtonExmple>
+    <CInput :disable="dataInput.disable" :label="dataInput.label"></CInput>
+    <DBUtton><img src="../assets/img/close.png"></DBUtton>
     <Per></Per>
     <CItem></CItem>
     <CInfo></CInfo>
     <CNotify></CNotify>
-    <ENotify></ENotify> 
+    <CSelect></CSelect>
+
 </template>
 
 <script>
@@ -20,24 +23,26 @@ import DBUtton from '../components/shared/DBUtton.vue';
 import CItem from '../components/shared/CItem.vue';
 import CInfo from '../components/CInfo.vue';
 import CNotify from '../components/shared/СNotify.vue'
-import ENotify from '../components/shared/ENotify.vue'
-import Per from '../components/shared/Per.vue';
+import CSelect from '../components/shared/CSelect.vue';
+
 
     export default {
         components: {
-            CButton,
-            CButtonExmple,
-            CInput,
-            DBUtton,
-            CItem,
-            CInfo,
-            CNotify,
-            ENotify,
-            Per,
-        },
+        CButton,
+        CButtonExmple,
+        CInput,
+        DBUtton,
+        CItem,
+        CInfo,
+        CNotify,
+        CSelect,
+},  
         data(){
             return{
-
+                dataInput: {
+                    label: "",
+                    disable: false,
+                }
             }
         },
         methods:{

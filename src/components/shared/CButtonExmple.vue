@@ -1,4 +1,4 @@
-<template>
+d<template>
     <button :class="computedClass" @click="$emit('c-click')" :disabled="disable">
         <div class="state-layer">
             <p class="place-text">{{ buttonText }}<slot></slot></p>
