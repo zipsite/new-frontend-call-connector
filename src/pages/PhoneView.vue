@@ -11,10 +11,7 @@
 </template>
 
 <script>
-import CButton from '../components/shared/CButton.vue';
-import CButtonExmple from '../components/shared/CButtonExmple.vue';
-import CInput from '../components/shared/CInput.vue';
-import SettingUser from '../components/SettingUser.vue';
+
   export default{
     data(){
       return{
@@ -27,10 +24,7 @@ import SettingUser from '../components/SettingUser.vue';
       }
     },
     components:{
-      CButton,
-      CButtonExmple,
-      CInput,
-      SettingUser,
+
     },
   } 
 </script>

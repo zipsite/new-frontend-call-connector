@@ -1,7 +1,7 @@
 d<template>
     <button :class="computedClass" @click="$emit('c-click')" :disabled="disable">
         <div class="state-layer">
-            <p class="place-text">{{ buttonText }}<slot></slot></p>
+            <p class="place-text">{{ buttonText }}</p>
         </div>
     </button>
 </template>
@@ -11,11 +11,15 @@ export default {
     props: {
         buttonText: {
             type: String,
-            default: "ButtonText"
+            default: ""
         },
         disable: {
             type: Boolean,
             default: false
+        },
+        icon:{
+            type: String,
+            default:""
         },
     },
     data() {
@@ -30,13 +34,11 @@ export default {
 }
 </script>
 
-<style>
+<style >
 .c-button-example {
     border: none;
     border-radius: 2px;
     display: block;
-    background-color: #737FF3;
-    color: #FFF;
     cursor: pointer;
     outline: none;
 }
@@ -46,7 +48,7 @@ export default {
     padding: 12px 18px;
 }
 
-.c-button-example:hover > .state-layer{
+/* .c-button-example:hover > .state-layer{
     background-color: #ffffff20;
 } 
 
@@ -61,5 +63,7 @@ export default {
 .c-buttton-example:disabled {
     background-color: #C8C8C8;
     color: #3A3A3A;
-}
+} */
+
+
 </style>

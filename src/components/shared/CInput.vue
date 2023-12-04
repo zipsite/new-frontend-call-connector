@@ -3,18 +3,24 @@
         <template v-if="label !== ''">
             <div class="label" :label="label" :disabled="disable">{{ label }}</div>
         </template>
-        <input  type="text" :placeholder="placeholder" :disabled="disable">
+        <input @input="$emit('update:modelValue', $event.target.value)" type="text" placeholder="" :disabled="disable">
         <template v-if="error !== ''">
             <div class="error">
                 <div class="place-error">{{ error }}</div>
                 <div class="line"></div>
             </div>
         </template>
-    </div>
+    </div> 
 </template>
 
 <script>
 export default {
+    data() {
+        return {
+            newTask: '',
+            tasks: []
+        };
+    },
     props: {
         label: {
             type: String,
@@ -31,6 +37,9 @@ export default {
         placeholder: {
             type: String,
             default: "",
+        },
+        modelValue:{
+            type: String,
         },
     },
 }

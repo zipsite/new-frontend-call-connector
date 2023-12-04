@@ -9,12 +9,13 @@ export default {
         textButton: {
             type: String,
             default: "text"
-        }
+        },
+        
     }
 }
 </script>
 
-<style>
+<style scoped>
 
 .c-button-img {
     height: 44px;
@@ -27,19 +28,23 @@ export default {
     border: none;
     gap: 6px;
     cursor: pointer;
+    outline: none;
 }
 
-.c-button-img:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)),linear-gradient(#737FF3, #737FF3);
+.c-button-img:hover{
+    background-color: #737FF380;
 }
 
-.c-button-img:active {
-    background:  linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),linear-gradient(#737FF3, #737FF3);
+.c-button-img:active{
+    background-color: #737FF365;
 }
 
-.c-buttton-img:disabled {
+.c-button-img:focus-visible{
+    background-color: #737FF380;
+}
+
+.c-button-img:disabled{
     background-color: #C8C8C8;
     color: #3A3A3A;
 }
-
 </style>

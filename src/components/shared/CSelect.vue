@@ -1,9 +1,12 @@
 <template>
     <label class="label">{{ label }}</label>
-    <select v-for="item in items" :key="role.id">
-        <option >Не выбрано</option>
-        <option ></option>
-        <option ></option>
+    <select>
+        <option 
+            v-for="option in options"
+            :key="option.value"
+        >
+        {{ option.name }}
+        </option>
     </select>
 </template>
 
@@ -14,6 +17,12 @@
                 type: String,
                 default: ""
             },
+            options:{
+                type: Array,
+                default(){
+                    return[]
+                }
+            }
         },
         
     }

@@ -20,6 +20,7 @@
         align-items: center;
         cursor: pointer;
         border: none;
+        outline: none;
     }
 
     .delete:hover{
@@ -28,5 +29,8 @@
 
     .delete:active{
         background-color: rgba(171, 171, 171, 0.50);
+    }
+    .delete:focus-visible{
+        background-color: rgba(171, 171, 171, 0.20); 
     }
 </style>
