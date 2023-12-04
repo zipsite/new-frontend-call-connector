@@ -25,14 +25,6 @@
   src: url(./fonts/MaterialSymbolsOutlined[FILL\,GRAD\,opsz\,wght].ttf);
 }
 
-.hed{
-  height: 100px;
-  display: flex;
-  padding: 12px 32px;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
-}
 
 .right{
   display: flex;
