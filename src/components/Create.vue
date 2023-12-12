@@ -32,16 +32,12 @@ export default {
                 this.tasks.push({ name: this.newTask, completed: false });
                 this.newTask = "";
             }
-            this.newTask = '';
         },
         deleteTask(index) {
             this.tasks.splice(index, 1);
         },
         toggleTask(index) {
             this.tasks[index].completed = !this.tasks[index].completed;
-        },
-        clearInput() {
-            
         },
     },
     components: { CInput, DBUtton, CButtonExmple }

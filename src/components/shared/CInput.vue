@@ -3,7 +3,7 @@
         <template v-if="label !== ''">
             <div class="label" :label="label" :disabled="disable">{{ label }}</div>
         </template>
-        <input @input="$emit('update:modelValue', $event.target.value)" type="text" placeholder="" :disabled="disable">
+        <input @input="$emit('update:modelValue', $event.target.value)" :type="type" :value="modelValue" placeholder="" :disabled="disable">
         <template v-if="error !== ''">
             <div class="error">
                 <div class="place-error">{{ error }}</div>
@@ -41,12 +41,12 @@ export default {
         modelValue: {
             type: String,
         },
+        type:{
+            type: String,
+            default: "text",
+        }
     },
-    methods: {
-        clearInput() {
-            this.newTask = '';
-        },
-    },
+
 }
 </script>
 

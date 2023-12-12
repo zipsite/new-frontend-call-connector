@@ -1,6 +1,5 @@
 <template>
     <span class="icon-font">search</span>
-    <CButton textButton="Создать номер"><img src="../assets/img/pencil.png"></CButton>
     <CInput :disable="dataInput.disable" :label="dataInput.label" :error="error"></CInput>
     <DBUtton><img src="../assets/img/close.png"></DBUtton>
     <CItem></CItem>
@@ -13,7 +12,6 @@
 </template>
 
 <script>
-import CButton from '../components/shared/CButton.vue';
 import CInput from '../components/shared/CInput.vue';
 import DBUtton from '../components/shared/DBUtton.vue';
 import CItem from '../components/shared/CItem.vue';
@@ -27,7 +25,6 @@ import CButtonExmple from '../components/shared/CButtonExmple.vue';
 
 export default {
     components: {
-    CButton,
     CInput,
     DBUtton,
     CItem,
