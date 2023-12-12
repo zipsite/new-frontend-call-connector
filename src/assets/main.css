@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  src: url("./fonts/Montserrat-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("./fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Material Symbols Outlined";
+  src: url(./fonts/MaterialSymbolsOutlined[FILL\,GRAD\,opsz\,wght].ttf);
+}
+
+.icon-font {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.right{
+  display: flex;
+  width: 600px;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.center{
+  margin-top: 32px;
+  display: flex;
+  padding: 0px 344px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+
+
+
