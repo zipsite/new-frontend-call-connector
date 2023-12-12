@@ -1,14 +1,15 @@
 <template>
-    <SButtonC buttonText="Добавить"></SButtonC>
-    <FButtonC buttonText="Создать номер"><img src="../assets/img/pencil.png"></FButtonC>
+    <span class="icon-font">search</span>
     <CButton textButton="Создать номер"><img src="../assets/img/pencil.png"></CButton>
     <CInput :disable="dataInput.disable" :label="dataInput.label" :error="error"></CInput>
     <DBUtton><img src="../assets/img/close.png"></DBUtton>
     <CItem></CItem>
     <CInfo></CInfo>
     <CSelect :options="options"></CSelect>
-    <CNotify></CNotify>
+    <Notify></Notify>
     <Create></Create>
+    <CButtonExmple buttonText="Добавить номер"></CButtonExmple>
+
 </template>
 
 <script>
@@ -17,11 +18,10 @@ import CInput from '../components/shared/CInput.vue';
 import DBUtton from '../components/shared/DBUtton.vue';
 import CItem from '../components/shared/CItem.vue';
 import CInfo from '../components/CInfo.vue';
-import CNotify from '../components/shared/СNotify.vue';
+import Notify from '../components/shared/Notify.vue';
 import CSelect from '../components/shared/CSelect.vue';
-import SButtonC from '../components/shared/SButton.vue';
-import FButtonC from '../components/shared/FButton.vue';
 import Create from '../components/Create.vue';
+import CButtonExmple from '../components/shared/CButtonExmple.vue';
 
 
 
@@ -32,11 +32,10 @@ export default {
     DBUtton,
     CItem,
     CInfo,
-    CNotify,
+    Notify,
     CSelect,
-    SButtonC,
-    FButtonC,
     Create,
+    CButtonExmple,
 },
     data() {
         return {

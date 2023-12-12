@@ -91,8 +91,6 @@ export default {
     background-color: #7380f32d;
 }
 
-
-
 .nav-tab.active .line {
     background-color: #737FF3;
 }

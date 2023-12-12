@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat","Roboto", "Material";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
   border-radius: 2px;
@@ -21,10 +21,23 @@
 }
 
 @font-face {
-  font-family: "Material";
+  font-family: "Material Symbols Outlined";
   src: url(./fonts/MaterialSymbolsOutlined[FILL\,GRAD\,opsz\,wght].ttf);
 }
 
+.icon-font {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
 
 .right{
   display: flex;
@@ -44,19 +57,6 @@
   align-self: stretch;
 }
 
-.block-right{
-  display: flex;
-  width: 360px;
-  height: 590px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  flex-shrink: 0;
-  border: 1px solid rgba(0, 0, 0, 0.24);
-}
 
-.b-text{
-  font-size: 24px;
-  color: #3a3a3a;
-}
+
 

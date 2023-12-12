@@ -10,7 +10,7 @@
                 <div class="line"></div>
             </div>
         </template>
-    </div> 
+    </div>
 </template>
 
 <script>
@@ -38,8 +38,13 @@ export default {
             type: String,
             default: "",
         },
-        modelValue:{
+        modelValue: {
             type: String,
+        },
+    },
+    methods: {
+        clearInput() {
+            this.newTask = '';
         },
     },
 }

@@ -1,7 +1,7 @@
 <template>
     <div>
         <CInput type="text" v-model="newTask" placeholder=""></CInput>
-        <SButton @click="addTask" buttonText="Добавить"></SButton>
+        <CButtonExmple @click="addTask" buttonText="Добавить" buttonClass="primary-button"></CButtonExmple>
         <div id="tasks">
             <div class="task" v-for="(task, index) in tasks" :key="index">
                 <span :class="{ done: task.completed }" @click="toggleTask(index)">{{ task.name }}</span>
@@ -12,9 +12,9 @@
 </template>
   
 <script>
+import CButtonExmple from './shared/CButtonExmple.vue';
 import CInput from './shared/CInput.vue';
 import DBUtton from './shared/DBUtton.vue';
-import SButton from './shared/SButton.vue';
 
 export default {
     data() {
@@ -32,15 +32,19 @@ export default {
                 this.tasks.push({ name: this.newTask, completed: false });
                 this.newTask = "";
             }
+            this.newTask = '';
         },
         deleteTask(index) {
             this.tasks.splice(index, 1);
         },
         toggleTask(index) {
             this.tasks[index].completed = !this.tasks[index].completed;
-        }
+        },
+        clearInput() {
+            
+        },
     },
-    components: { CInput, SButton, DBUtton }
+    components: { CInput, DBUtton, CButtonExmple }
 };
 </script>
   
